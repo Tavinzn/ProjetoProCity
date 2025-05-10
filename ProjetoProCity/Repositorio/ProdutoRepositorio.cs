@@ -18,7 +18,7 @@ namespace ProjetoProCity.Repositorio
                 cmd.Parameters.Add("@nome", MySqlDbType.VarChar).Value = produto.Nome;
                 cmd.Parameters.Add("@descricao", MySqlDbType.VarChar).Value = produto.Descricao;
                 cmd.Parameters.Add("@preco", MySqlDbType.Decimal).Value = produto.Preco;
-                cmd.Parameters.Add("@quantidade", MySqlDbType.Int32).Value = produto.quantidade;
+                cmd.Parameters.Add("@quantidade", MySqlDbType.Int32).Value = produto.Quantidade;
                 cmd.ExecuteNonQuery();
                 conexao.Close();
             }
@@ -36,7 +36,7 @@ namespace ProjetoProCity.Repositorio
                     cmd.Parameters.Add("@nome", MySqlDbType.VarChar).Value = produto.Nome;
                     cmd.Parameters.Add("@descricao", MySqlDbType.VarChar).Value = produto.Descricao;
                     cmd.Parameters.Add("@preco", MySqlDbType.Decimal).Value = produto.Preco;
-                    cmd.Parameters.Add("@quantidade", MySqlDbType.Int32).Value = produto.quantidade;
+                    cmd.Parameters.Add("@quantidade", MySqlDbType.Int32).Value = produto.Quantidade;
                     int linhasAfetadas = cmd.ExecuteNonQuery();
                     return linhasAfetadas > 0;
                 }
@@ -70,7 +70,7 @@ namespace ProjetoProCity.Repositorio
                                 Nome = ((string)dr["Nome"]),
                                 Descricao = ((string)dr["Descricao"]),
                                 Preco = Convert.ToDecimal(dr["Preco"]),
-                                quantidade = Convert.ToInt32(dr["Quantidade"])
+                                Quantidade = Convert.ToInt32(dr["Quantidade"])
                             });
                 }
                 return produtos;
@@ -95,7 +95,7 @@ namespace ProjetoProCity.Repositorio
                     produto.Nome = (string)(dr["Nome"]);
                     produto.Descricao = (string)(dr["Descricao"]);
                     produto.Preco = Convert.ToDecimal(dr["Preco"]);
-                    produto.quantidade = Convert.ToInt32(dr["Quantidade"]);
+                    produto.Quantidade = Convert.ToInt32(dr["Quantidade"]);
                 }
                 return produto;
             }
