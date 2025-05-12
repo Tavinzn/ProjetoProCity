@@ -1,0 +1,27 @@
+﻿.fundo{
+    height: 100%;
+}
+
+body {
+    background: #121212;
+    width:100%;
+}
+.forms{
+    padding:2rem;
+    border: 2px solid #fff;
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+    margin-top:9rem;
+    position:absolute;
+    right: 40rem;
+}
+
+.form-group {
+    padding: 1rem;
+    align-self: center;
+}
+
+.title{
+    justify-self:center;
+}

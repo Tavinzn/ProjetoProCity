@@ -1,0 +1,20 @@
+﻿.fundo {
+    position: absolute;
+    object-fit: cover;
+    z-index:-1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container1{
+    background: #090909;
+    width: 50%;
+    align-content:center;
+    height: 10rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    justify-self: center;
+
+    
+}
