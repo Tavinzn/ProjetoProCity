@@ -9,6 +9,7 @@ body {
 .forms{
     padding:2rem;
     border: 2px solid #fff;
+    border-radius: 1rem;
     justify-self: center;
     align-self: center;
     font-weight: 600;

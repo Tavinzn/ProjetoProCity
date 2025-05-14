@@ -1,0 +1,27 @@
+﻿body{
+    background: #414141;
+}
+
+hr{
+    color: #fff;
+}
+h1{
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.butao{
+    justify-self: end;
+    display:flex;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+.corpo{
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.form-group{
+    margin: 1rem;
+}

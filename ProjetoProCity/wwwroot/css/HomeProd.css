@@ -1,8 +1,15 @@
 ﻿.bcad{
-    margin: 2rem;
+    margin: 2rem 0;    
 }
 
+.navi{
+    justify-self: end;
+}
 
 body{
     background: #414141;
+}
+
+.lista{
+    border-radius: 22rem;
 }
